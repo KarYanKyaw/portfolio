@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Toaster />
       <Navbar />
-      <div className=" min-h-screen">
+      <div className="overflow-y-hidden min-h-screen">
         <HeroSection />
         <ToolSection />
         <ProjectSection />
