@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=PT+Serif:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item {
+  letter-spacing: 0.3px;
+  @apply relative text-neutral-200 cursor-pointer hover:opacity-80 select-none;
+}
+
+.nav-item::after {
+  content: "";
+  @apply hidden md:block bg-neutral-200 h-[3px] w-[0%] left-0 -bottom-[7px] rounded absolute duration-100;
+}
+
+.nav-item:hover::after {
+  @apply w-[100%];
+}
