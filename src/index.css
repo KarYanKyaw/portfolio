@@ -16,3 +16,20 @@
 .nav-item:hover::after {
   @apply w-[100%];
 }
+.education {
+  background-image: url("https://scontent-hkg4-2.xx.fbcdn.net/v/t1.6435-9/125229782_395898391770709_6449426257225728229_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=XFGZXMLBd9MAX9YEOpl&_nc_ht=scontent-hkg4-2.xx&oh=00_AfBzLtnDbQQurK6n8zp4I7lLWOa2YLZNeyd_3_PPdk3bcg&oe=65E9A4B3");
+  background-attachment: fixed;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Center {
+  @apply min-h-screen flex justify-center items-center;
+}
+.Button {
+  @apply inline-flex bg-neutral-200 text-neutral-900 hover:bg-neutral-200/90 dark:bg-neutral-50 dark:text-neutral-200 dark:hover:bg-neutral-50/90 h-10 px-4 py-2 items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-neutral-950 dark:focus-visible:ring-neutral-300;
+}
+.Outline {
+  @apply text-neutral-200 underline-offset-4 hover:underline dark:text-neutral-50 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-neutral-950 dark:focus-visible:ring-neutral-300;
+}

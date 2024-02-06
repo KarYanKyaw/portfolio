@@ -6,6 +6,7 @@ import "atropos/css";
 import "animate.css";
 import "aos/dist/aos.css";
 import "atropos/css";
+import "react-vertical-timeline-component/style.min.css";
 
 import { AppContextProvider } from "./contexts/AppContext.jsx";
 

@@ -30,7 +30,7 @@ const NavItems = () => {
     },
   ];
   return (
-    <div className=" flex md:flex-row flex-col gap-7">
+    <div className=" flex flex-row  gap-7">
       {navItems.map(({ to, id, section }) => (
         <a
           href={`#${to}`}

@@ -1,8 +1,84 @@
 import { createContext, useContext } from "react";
+import cart from "../assets/cart.png";
+import baydin2 from "../assets/baydin2.png";
+import food from "../assets/food.png";
 
 const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
+  const contactData = [
+    {
+      id: 1,
+      type: "Email",
+      info: "karyankyaw02dev@gmail.com",
+    },
+    {
+      id: 2,
+      type: "Phone",
+      info: "+959795020295",
+    },
+    {
+      id: 3,
+      type: "Linkedlin",
+      info: "Kar Yan Kyaw",
+      link: "https://www.linkedin.com/in/kar-yan-kyaw-93a5362b3/",
+    },
+    {
+      id: 4,
+      type: "Github",
+      info: "https://github.com/KarYanKyaw",
+      link: "https://github.com/KarYanKyaw",
+    },
+  ];
+  const educationData = [
+    {
+      id: 1,
+      title: "University Of Yangon",
+      desc: "Had to leave Vangon University, until changes occurred in the political situation in Myanmar in 2021",
+      date: "2018-2020",
+      position: "right",
+    },
+    {
+      id: 2,
+      title: "MMS-IT",
+      desc: "Learning both front-end with React and back-end with PHP in full-stack web development",
+      date: "2021-present",
+      position: "left",
+    },
+    {
+      id: 3,
+      title: "SCBI - Stamford-City Business Institute",
+      desc: "Got Diploma in Communative English back in 2019.",
+      date: "2018-2019",
+      position: "right",
+    },
+  ];
+  const projectsData = [
+    {
+      id: 1,
+      img: cart,
+      title: "E-commerce",
+      desc: "My very first e-commerce project built using Vanilla JavaScript. The project incorporates Bootstrap, Sass, and SweetAlert2 libraries. For the data aspect, utilized the Fake Store API.",
+      github: "https://github.com/KarYanKyaw/cart",
+      project: "https://cart-44yq.vercel.app/",
+    },
+    {
+      id: 2,
+      img: baydin2,
+      title: "Fortune Teller",
+      desc: "Burmese fortune-telling website using Context API, React Router v6, and Tailwind CSS to engage users in an immersive experience.",
+      github: "https://github.com/KarYanKyaw/Baydin-2",
+      project: "https://baydinapp.vercel.app/",
+    },
+    {
+      id: 3,
+      img: food,
+      title: "Bite Food",
+      desc: "Replicate the real life website using React in collaboration with friends, with a focus on Git collaboration and project management. Utilized branching for feature development, pull requests for code review, conflict resolution, and versioning to track changes over time.",
+      github: "https://github.com/KarYanKyaw/Bite-Food",
+      project: "https://teamf.mmsdev.site/",
+    },
+  ];
   const skillsData = [
     {
       id: 31,
@@ -86,7 +162,13 @@ export const AppContextProvider = ({ children }) => {
     ));
   };
 
-  const data = { skillsData, starsLooping };
+  const data = {
+    skillsData,
+    starsLooping,
+    educationData,
+    projectsData,
+    contactData,
+  };
   return <AppContext.Provider value={data}>{children}</AppContext.Provider>;
 };
 

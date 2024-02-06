@@ -1,15 +1,26 @@
-import { Navbar } from "@/components";
-import { HeroSection, ToolSection } from "@/sections";
+import { Footer, Navbar } from "@/components";
+import { Toaster } from "@/components/ui/sonner";
+import {
+  HeroSection,
+  ToolSection,
+  ProjectSection,
+  EducationSection,
+  ContactSection,
+} from "@/sections";
 import React from "react";
 
 const Home = () => {
   return (
     <>
+      <Toaster />
       <Navbar />
       <div className=" min-h-screen">
         <HeroSection />
         <ToolSection />
-        <div className=" min-h-screen"></div>
+        <ProjectSection />
+        <EducationSection />
+        <ContactSection />
+        <Footer />
       </div>
     </>
   );
