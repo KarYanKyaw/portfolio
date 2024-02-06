@@ -1,7 +1,12 @@
 import { ContactForm, ContactInfo, SectionHeader, Wrapper } from "@/components";
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 
 const ContactSection = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <section
       className=" min-h-screen md:py-12 py-24 bg-neutral-800"
@@ -9,11 +14,19 @@ const ContactSection = () => {
     >
       <Wrapper>
         <SectionHeader>Contact Me</SectionHeader>
-        <div className=" grid grid-cols-1 gap-5 md:grid-cols-3">
-          <div className=" col-span-full md:col-span-1">
+        <div className=" grid grid-cols-1 gap-12 items-center md:grid-cols-2">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            className=" col-span-full md:col-span-1"
+          >
             <ContactInfo />
           </div>
-          <div className=" col-span-full md:col-span-2">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            className=" col-span-full md:col-span-1"
+          >
             <ContactForm />
           </div>
         </div>

@@ -24,7 +24,7 @@ const ContactForm = () => {
     toast("Thank You for sending me message. Have a nice day!");
   };
   return (
-    <div className=" md:w-[80%] w-full mx-auto">
+    <div className=" w-full mx-auto">
       <form onSubmit={handleSubmit}>
         <div className=" flex flex-col gap-5">
           <FormInput
