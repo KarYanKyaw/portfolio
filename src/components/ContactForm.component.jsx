@@ -8,24 +8,22 @@ import { toast } from "sonner";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
-    textarea: "",
+    message: "",
     email: "",
   });
   const handleInputChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormData({
-      name: "",
-      textarea: "",
-      email: "",
-    });
     toast("Thank You for sending me message. Have a nice day!");
   };
   return (
     <div className=" w-full mx-auto">
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        action="https://formspree.io/f/xvoekdzv"
+        method="POST"
+      >
         <div className=" flex flex-col gap-5">
           <FormInput
             required
