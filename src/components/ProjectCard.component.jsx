@@ -28,15 +28,17 @@ const ProjectCard = ({ title, desc, github, project, img }) => {
           <p className=" font-medium h-[12rem] text-neutral-200/80">{desc}</p>
         </div>
       </Atropos>
-      <div className=" border-t p-5 border-neutral-800 flex justify-end gap-3">
-        <a className="Outline" href={github} target="_blank">
-          Check Code
-        </a>
+      {project && (
+        <div className=" border-t p-5 border-neutral-800 flex justify-end gap-3">
+          <a className="Outline" href={github} target="_blank">
+            Check Code
+          </a>
 
-        <a className="Button" target="_blank" href={project}>
-          Check Project
-        </a>
-      </div>
+          <a className="Button" target="_blank" href={project}>
+            Check Project
+          </a>
+        </div>
+      )}
     </div>
   );
 };

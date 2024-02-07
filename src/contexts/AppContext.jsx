@@ -2,6 +2,7 @@ import { createContext, useContext } from "react";
 import cart from "../assets/cart.png";
 import baydin2 from "../assets/baydin2.png";
 import food from "../assets/food.png";
+import under from "../assets/under.png";
 
 const AppContext = createContext();
 
@@ -32,13 +33,6 @@ export const AppContextProvider = ({ children }) => {
   ];
   const educationData = [
     {
-      id: 1,
-      title: "University Of Yangon",
-      desc: "Had to leave Vangon University, until changes occurred in the political situation in Myanmar in 2021",
-      date: "2018-2020",
-      position: "right",
-    },
-    {
       id: 2,
       title: "MMS-IT",
       desc: "Learning both front-end with React and back-end with PHP in full-stack web development",
@@ -46,11 +40,19 @@ export const AppContextProvider = ({ children }) => {
       position: "left",
     },
     {
-      id: 3,
-      title: "SCBI - Stamford-City Business Institute",
-      desc: "Got Diploma in Communative English back in 2019.",
-      date: "2018-2019",
+      id: 1,
+      title: "University Of Yangon",
+      desc: "Completed 2nd year for the Bachelor of Science in Industrial Chemistry, University of Yangon (Pending graduation due to the political situation)",
+      date: "2018-2020",
       position: "right",
+    },
+
+    {
+      id: 3,
+      title: "Stamford-City Business Institute",
+      desc: "Diploma in Communicative English, Stanford City Business Institute (SCBI) Myanmar",
+      date: "2018-2019",
+      position: "left",
     },
   ];
   const projectsData = [
@@ -77,6 +79,12 @@ export const AppContextProvider = ({ children }) => {
       desc: "Replicate the real life website using React in collaboration with friends, with a focus on Git collaboration and project management. Utilized branching for feature development, pull requests for code review, conflict resolution, and versioning to track changes over time.",
       github: "https://github.com/KarYanKyaw/Bite-Food",
       project: "https://teamf.mmsdev.site/",
+    },
+    {
+      id: 4,
+      img: under,
+      title: "More To Come",
+      desc: "Bigger and better projects are underway.",
     },
   ];
   const skillsData = [
