@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { Button } from "./ui/button";
+import kyk2 from "../assets/kyk2.jpg";
 const HeroInfo = () => {
   const offers = useRef(null);
   const name = useRef(null);
@@ -49,10 +50,12 @@ const HeroInfo = () => {
         <span>I'm</span> <span ref={name} className=" text-yellow-400"></span>
       </p>
       <p className="text-neutral-100 text-base lg:text-2xl">
-        <span>-</span> <span className=" capitalize" ref={offers}></span>
+        <span>-</span> <span className="capitalize" ref={offers}></span>
       </p>
       <div>
-        <Button variant="secondary">Download CV</Button>
+        <a href={kyk2} className="Button" download={kyk2}>
+          Download CV
+        </a>
       </div>
     </div>
   );
