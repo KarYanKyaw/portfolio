@@ -14,11 +14,11 @@ const ContactForm = () => {
   const handleInputChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = () => {
     toast("Thank You for sending me message. Have a nice day!");
   };
   return (
-    <div className=" w-full mx-auto">
+    <div className="w-full mx-auto">
       <form
         onSubmit={handleSubmit}
         action="https://formspree.io/f/xvoekdzv"
@@ -54,9 +54,10 @@ const ContactForm = () => {
             required
             id="message"
             name="message"
+            value={formData.message}
+            onChange={handleInputChange}
             className=" bg-neutral-900 border-neutral-900 text-neutral-200"
           />
-
           <Button type="submit">Send Now</Button>
         </div>
       </form>
