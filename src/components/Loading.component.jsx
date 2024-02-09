@@ -3,8 +3,8 @@ import { ClimbingBoxLoader } from "react-spinners";
 
 const Loading = () => {
   return (
-    <div className=" Center">
-      <ClimbingBoxLoader color="#171717" speedMultiplier={2} />
+    <div className=" bg-neutral-800 Center">
+      <ClimbingBoxLoader color="#e7e5e4" speedMultiplier={2} />
     </div>
   );
 };
