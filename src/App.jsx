@@ -1,9 +1,10 @@
 import AOS from "aos";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 
 import { Route, Routes } from "react-router-dom";
 import { Loading } from "./components";
-import Home from "./pages/Home";
+
+const Home = React.lazy(() => import("./pages/Home"));
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -15,8 +16,9 @@ const App = () => {
       setIsLoaded(true);
     });
   }, []);
+
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       {isLoaded ? (
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,7 +26,7 @@ const App = () => {
       ) : (
         <Loading />
       )}
-    </>
+    </Suspense>
   );
 };
 
