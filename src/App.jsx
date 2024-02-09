@@ -1,10 +1,9 @@
 import AOS from "aos";
-import React, { Suspense, lazy, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Route, Routes } from "react-router-dom";
 import { Loading } from "./components";
 
-const Home = lazy(() => import("./pages/Home"));
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
