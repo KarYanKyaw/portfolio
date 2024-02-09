@@ -9,7 +9,7 @@ const ContactSection = () => {
 
   return (
     <section
-      className=" min-h-screen Center overflow-y-hidden  bg-neutral-800"
+      className=" min-h-screen overflow-y-hidden py:12 md:py-24 bg-neutral-800"
       id="contact"
     >
       <Wrapper>
