@@ -9,9 +9,12 @@ import "atropos/css";
 import "react-vertical-timeline-component/style.min.css";
 
 import { AppContextProvider } from "./contexts/AppContext.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <AppContextProvider>
-    <App />
-  </AppContextProvider>
+  <BrowserRouter>
+    <AppContextProvider>
+      <App />
+    </AppContextProvider>
+  </BrowserRouter>
 );
