@@ -10,7 +10,6 @@ const EducationSection = () => {
     >
       <Wrapper>
         <div className="flex flex-col gap-7">
-          <SectionHeader className="!text-neutral-800">Education</SectionHeader>
           <EducationTree />
         </div>
       </Wrapper>
