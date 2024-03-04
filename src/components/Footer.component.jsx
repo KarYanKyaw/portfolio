@@ -27,7 +27,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <p className=" text-lg">
+        <p className=" text-xs md:text-lg">
           © 2024 All Rights Reserved. Developed By Kar Yan Kyaw
         </p>
       </div>
