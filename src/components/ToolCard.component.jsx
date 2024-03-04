@@ -13,13 +13,13 @@ const SkillCard = ({ skill, rating, img }) => {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className=" bg-primary grid items-center min-w-full grid-cols-5  text-secondary px-4 py-3 duration-300 gap-4 select-none border-2 rounded  border-transparent hover:border-yellow-500"
+      className=" bg-secondary grid items-center min-w-full grid-cols-5  text-secondary px-4 py-3 duration-300 gap-4 select-none border-2 rounded  border-transparent hover:border-yellow-500"
     >
       <div className=" col-span-1">
         <img src={img} />
       </div>
       <div className="col-span-4 flex flex-col justify-start items-start gap-2">
-        <p className="font-bold text-start text-lg">{skill}</p>
+        <p className="font-bold text-start text-primary text-lg">{skill}</p>
         <div className=" flex gap-1">{starsLooping(rating)}</div>
       </div>
     </div>
