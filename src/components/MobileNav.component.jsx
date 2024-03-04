@@ -5,10 +5,8 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { NavItems } from ".";
 
 const MobileNav = () => {
   const navItems = [
@@ -48,7 +46,7 @@ const MobileNav = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6 stroke-white"
+          className="w-6 h-6"
         >
           <path
             strokeLinecap="round"
@@ -66,7 +64,7 @@ const MobileNav = () => {
                   <a
                     href={`#${to}`}
                     key={id}
-                    className="nav-item pb-4 md:pb-0 border-b md:border-b-0 text-lg font-medium"
+                    className="nav-item pb-4 text-primary md:pb-0 border-b md:border-b-0 text-lg font-medium"
                   >
                     {section}
                   </a>

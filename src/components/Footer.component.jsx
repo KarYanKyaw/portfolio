@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="w-full text-center space-y-4 footer border-t py-[24px] border-t-neutral-600 bg-neutral-800">
+      <div className="w-full text-center space-y-4 footer border-t py-[24px] bg-primary-foreground">
         <div className="flex justify-center gap-3 ">
           <div>
             <a target="_blank" href="https://github.com/KarYanKyaw">
@@ -27,7 +27,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <p className="  text-neutral-400 text-lg">
+        <p className=" text-lg">
           © 2024 All Rights Reserved. Developed By Kar Yan Kyaw
         </p>
       </div>

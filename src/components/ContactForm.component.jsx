@@ -39,24 +39,19 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleInputChange}
             type="email"
-            name="email"
+            name="email" 
             label="email"
             placeholder="Enter Your Email"
           />
-          <Label
-            className=" text-lg text-neutral-200/50 capitalize"
-            htmlFor={"message"}
-          >
-            Say Somethig, dont be shy
-          </Label>
+          <Label htmlFor={"message"}>Say Something, don't be shy</Label>
 
           <Textarea
             required
             id="message"
             name="message"
             value={formData.message}
+            className=" border-primary"
             onChange={handleInputChange}
-            className=" bg-neutral-900 border-neutral-900 text-neutral-200"
           />
           <Button type="submit">Send Now</Button>
         </div>

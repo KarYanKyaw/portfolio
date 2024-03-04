@@ -10,11 +10,14 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { AppContextProvider } from "./contexts/AppContext.jsx";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "./contexts/ThemeContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <AppContextProvider>
-      <App />
-    </AppContextProvider>
+    <ThemeProvider>
+      <AppContextProvider>
+        <App />
+      </AppContextProvider>
+    </ThemeProvider>
   </BrowserRouter>
 );

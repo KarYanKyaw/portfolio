@@ -6,7 +6,10 @@ const Tools = () => {
   const { skillsData } = useAppContext();
 
   return (
-    <section id="skills" className="bg-neutral-900 py-12 md:py-0 Center">
+    <section
+      id="skills"
+      className=" bg-background flex justify-center py-12 items-center min-h-screen"
+    >
       <Wrapper>
         <SectionHeader>My Skill Sets</SectionHeader>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">

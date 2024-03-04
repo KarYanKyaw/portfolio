@@ -41,21 +41,23 @@ const HeroInfo = () => {
   }, []);
 
   return (
-    <div className="md:mt-5 animate__animated animate__fadeIn flex flex-col gap-8">
-      <p className=" text-yellow-400 text-base md:text-lg lg:text-xl font-bold  font-serif">
+    <div className=" animate__animated animate__fadeIn flex flex-col gap-8">
+      <p className=" dark:text-yellow-400  text-primary text-base md:text-lg lg:text-xl font-bold  font-serif">
         Hello World!
       </p>
-      <p className="text-neutral-100 font-medium text-2xl lg:text-6xl">
+      <p className="dark:text-neutral-100 font-medium text-2xl lg:text-6xl">
         {" "}
-        <span>I'm</span> <span ref={name} className=" text-yellow-400"></span>
+        <span>I'm</span>{" "}
+        <span
+          ref={name}
+          className=" dark:text-yellow-400  text-primary"
+        ></span>
       </p>
-      <p className="text-neutral-100 text-base lg:text-2xl">
+      <p className="dark:text-neutral-100 text-base lg:text-2xl">
         <span>-</span> <span className="capitalize" ref={offers}></span>
       </p>
       <div>
-        <a href={kyk2} className="Button" download={kyk2}>
-          Download CV
-        </a>
+        <Button>Download CV</Button>
       </div>
     </div>
   );

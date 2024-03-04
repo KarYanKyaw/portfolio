@@ -1,6 +1,7 @@
 import Aos from "aos";
 import Atropos from "atropos/react";
 import React, { useEffect } from "react";
+import { Button } from "./ui/button";
 
 const ProjectCard = ({ title, desc, github, project, img }) => {
   useEffect(() => {
@@ -11,32 +12,31 @@ const ProjectCard = ({ title, desc, github, project, img }) => {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="bg-neutral-900 rounded"
+      className="bg-primary rounded"
     >
-      <Atropos className="my-atropos">
-        <div className=" space-y-4 p-5 rounded bg-neutral-900">
-          <p className="text-xl text-neutral-200  font-bold font-serif">
-            {title}
-          </p>
-          <div className=" rounded p-3">
-            <img
-              className=" rounded h-32 w-full object-contain"
-              src={img}
-              alt=""
-            />
-          </div>
-          <p className=" font-medium h-[12rem] text-neutral-200/80">{desc}</p>
+      <div className="space-y-4 p-5 bg-background">
+        <p className="text-xl font-bold font-serif">{title}</p>
+        <div className=" rounded p-3">
+          <img
+            className=" rounded h-32 w-full object-contain"
+            src={img}
+            alt=""
+          />
         </div>
-      </Atropos>
+        <p className=" font-medium h-[12rem] text-primary/80">{desc}</p>
+      </div>
       {project && (
-        <div className=" border-t p-5 border-neutral-800 flex justify-end gap-3">
-          <a className="Outline" href={github} target="_blank">
-            Check Code
-          </a>
-
-          <a className="Button" target="_blank" href={project}>
-            Check Project
-          </a>
+        <div className=" border-t p-5 bg-background border-neutral-800 flex justify-end gap-3">
+          <Button variant="link">
+            <a href={github} target="_blank">
+              Check Code
+            </a>
+          </Button>
+          <Button variant="secondary">
+            <a href={project} target="_blank">
+              Check Project
+            </a>
+          </Button>
         </div>
       )}
     </div>

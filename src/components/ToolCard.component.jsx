@@ -13,7 +13,7 @@ const SkillCard = ({ skill, rating, img }) => {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="bg-neutral-200 grid items-center min-w-full grid-cols-5 text-neutral-800 px-4 py-3 duration-300 gap-4 select-none border-2 rounded  border-transparent hover:border-yellow-500"
+      className=" bg-primary grid items-center min-w-full grid-cols-5  text-secondary px-4 py-3 duration-300 gap-4 select-none border-2 rounded  border-transparent hover:border-yellow-500"
     >
       <div className=" col-span-1">
         <img src={img} />

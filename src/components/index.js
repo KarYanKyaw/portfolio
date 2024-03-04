@@ -13,4 +13,5 @@ export { default as ContactInfo } from "./ContactInfo.component";
 export { default as ContactForm } from "./ContactForm.component";
 export { default as FormInput } from "./FormInput.component";
 export { default as Footer } from "./Footer.component";
+export { default as ThemeDropdown } from "./ThemeDropdown.components";
 export { default as Loading } from "./Loading.component";
