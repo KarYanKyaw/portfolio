@@ -48,16 +48,17 @@ const HeroInfo = () => {
       <p className="dark:text-neutral-100 font-medium text-2xl lg:text-6xl">
         {" "}
         <span>I'm</span>{" "}
-        <span
-          ref={name}
-          className=" dark:text-yellow-400  text-primary"
-        ></span>
+        <span ref={name} className=" dark:text-yellow-400  text-primary"></span>
       </p>
       <p className="dark:text-neutral-100 text-base lg:text-2xl">
         <span>-</span> <span className="capitalize" ref={offers}></span>
       </p>
       <div>
-        <Button>Download CV</Button>
+        <Button>
+          <a download href={kyk2}>
+            Download CV
+          </a>
+        </Button>
       </div>
     </div>
   );
