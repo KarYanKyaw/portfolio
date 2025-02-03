@@ -4,7 +4,7 @@ import road from "../assets/road.jpg";
 const EducationSection = () => {
   return (
     <section
-      style={{ backgroundImage: `url(${road})` }}
+    style={{ backgroundImage: `url(${road})`, backgroundAttachment: "fixed" }}
       id="education"
       className={` min-h-screen py-24 md:py-32 bg-contain md:bg-cover  education`}
     >
